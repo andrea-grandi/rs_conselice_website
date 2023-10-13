@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>mywebsite1.1</title>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+		<link rel="stylesheet" href="style.css">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+		<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+	</head>
+	<body>
+
+		<!--HEADER-->
+		<div class="header">
+			<div class="logo">
+				<img src="images/logo.png" alt="">
+			</div>
+			<ul class="menu animate">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="downloads.html">Downloads</a></li>
+				<li><a href="attrezzature.html">Attrezzature</a></li>
+				<li><a href="comeArrivare.html">Come arrivare</a></li>
+				<li><a href="contatti.html">Contatti</a></li>
+			</ul>
+			<div class="hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+
+		<!--HERO-->
+		<div class="hero">
+			<div class="hero__content reveal">
+				<h1 class="med-text">Istruzioni: <br/> se cliccate sul collegamento si apre il file all'interno del browser in uso, dopo aver eventualmente permesso di visualizzare un contenuto attivo, cliccando con pulsante destro invece esce il menù a tendina, selezionate "Salva oggetto con nome" se volete salvare il file sul vostro disco rigido.</h1>
+				<h2 class="normal-text tw">
+					<p>
+						<a href="Downloads/depliant.pdf">Depliant.pdf</a>
+					</p>
+					<p>
+						<a href="Downloads/schemaTaglio.pdf">SchemaTaglio.pdf</a>
+					</p>
+					<p>
+						<a href="Downloads/SchemaTaglioR2000.dwg">SchemaTaglioR2000.dwg</a>
+					</p>
+					<p>
+						<a href="Downloads/SchemaTaglioR14.dwg">SchemaTaglioR14.dxf</a>
+					</p>
+					Per poter aprire file .pdf occorre aver installato Adobe Reader che potete trovare cliccando su questo
+					<a href="https://get.adobe.com/it/reader/">link</a>.</br>
+					Marchi, immagini e loghi di proprietà delle rispettive società.
+				</h2>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<pc class="tw">Copyright - 2022 Grandi Andrea</p>
+		</footer>
+
+
+		<!-- Jquery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+		<script>
+			$( document ).ready(function() {
+				/* Open Panel */
+				$( ".hamburger" ).on('click', function() {
+				  $(".menu").toggleClass("menu--open");
+				});
+			});
+
+			ScrollReveal().reveal('.reveal', { distance: '80px', duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 300});
+
+			ScrollReveal().reveal('.reveal', { distance: '80px', duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 300});
+
+		</script>
+
+	</body>
+</html>

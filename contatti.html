@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>mywebsite1.0</title>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+		<link rel="stylesheet" href="style.css">
+
+		<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+	</head>
+	<body>
+
+    <!--HEADER-->
+		<header class="header clearfix">
+			<img src="images/logo.png" alt="">
+			<a href="index.html" class="header__logo">
+			<a href="" class="header__icon_bar">
+				<span></span>
+				<span></span>
+				<span></span>
+			</a>
+			<ul class="header__menu animate">
+				<li class="header__menu__item"><a href="index.html">Home</a></li>
+				<li class="header__menu__item"><a href="downloads.html">Downloads</a></li>
+				<li class="header__menu__item"><a href="attrezzature.html">Attrezzature</a></li>
+				<li class="header__menu__item"><a href="comeArrivare.html">Come arrivare</a></li>
+				<li class="header__menu__item"><a href="contatti.html">Contatti</a></li>
+			</ul>
+		</header>
+
+		<div class="hero__contatti">
+			<div class="hero__content__contatti reveal">
+				<h1 class="med-text">
+					Tel. +39 0545 88180<br />
+				</h1>
+        <h1 class="med-text">
+          INFO GENERALI: info@rsconselice.it<br />
+          AMMINISTRAZIONE: amministrazione@rsconselice.it<br />
+          CLIENTI: commerciale@rsconselice.it<br />
+          FORNITORI: acquisti@rsconselice.it<br />
+          UFFICIO TECNICO: tecnico@rsconselice.it<br />
+          PRODUZIONE: produzione@rsconselice.it<br />
+        </h1>
+			</div>
+		</div>
+
+    <div class="hero__contatti mt-2">
+			<div class="hero__content__contatti reveal">
+				<h1 class="med-text">
+					http:
+				</h1>
+				<h1 class="normal-text tw">
+					Sito pubblico www.rsconselice.it<br />
+					Sito pubblicato nel server http://217.133.6.54/ (più aggiornato, con informazioni aggiuntive e protetto da password)<br />
+					Sito pubblicato in tiscali http://web.tiscali.it/rsconselice (vecchio)<br />
+				</h1>
+        <h1 class="med-text">
+          Per Clienti e Fornitori con esigenze di elevate comunicazioni di file è disponibile, nel nostro server, uno spazio ftp dedicato, con accesso protetto da nome e password comunicati insieme alle istruzioni anche qui di seguito riportate. Il servizio è stato limitato anche per capacità di spazio su disco ed è attivo solo in orari d'ufficio (se avete esigenze particolari, interpellateci).
+        </h1>
+				<h1 class="med-text">
+					ftp:
+				</h1>
+        <h1 class="normal-text">
+          Digitare nella barra degli indirizzi : ftp: //???.???.???.???/<br />
+          Apparirà una maschera richiesta utente e password<br />
+          Utente: ???????<br />
+          Password: **********<br />
+          (Attenzione alle maiuscole e minuscole)<br />
+          Usare come un disco rigido.<br />
+          Si visualizzeranno 2 cartelle, una per inserire i documenti per RS e l’altra per i documenti verso Voi.<br />
+        </h1>
+        <h1 class="small-text">
+          Messaggio di benvenuto con istruzioni:<br />
+          Benvenuti in ftp Server dell'RS s.n.c. Se siete in possesso di nome utente e password, questo è uno spazio a Voi dedicato nel server di RS s.n.c.. Ogni informazione qui contenuta è a Vostra disposizione ed a disposizione di RS s.n.c.. Consigliamo, sia per la privaci che per controlli gestione, di eliminare i file dopo l'uso. Sono state impostate limitazioni sia di spazio che di orario e scadenze password, (se ricompare sempre la maschera per utente e password, probabilmente siete arrivati al limite di spazio a disposizione) per qualsiasi esigenza contattare la RS s.n.c.. AVVISARE SEMPRE (e-mail o fax oppure telefono) la RS dei file depositati che dovrà gestire. Grazie e Buon lavoro.
+        </h1>
+			</div>
+		</div>
+
+    <!--FOOTER-->
+		<footer class="footer">
+			<p class="tw">Copyright - 2022 Grandi Andrea</p>
+		</footer>
+
+
+		<!-- Jquery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+		<script>
+			$( document ).ready(function() {
+				/* Open Panel */
+				$( ".hamburger" ).on('click', function() {
+				  $(".menu").toggleClass("menu--open");
+				});
+			});
+
+			ScrollReveal().reveal('.reveal', { distance: '80px', duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 300});
+
+			ScrollReveal().reveal('.reveal', { distance: '80px', duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 300});
+
+		</script>
+
+	</body>
+</html>

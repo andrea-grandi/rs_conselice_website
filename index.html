@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>mywebsite1.1</title>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+		<link rel="stylesheet" href="style.css">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+		<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+	</head>
+	<body>
+
+		<!--HEADER-->
+		<div class="header">
+			<div class="logo">
+				<img src="images/logo.png" alt="">
+			</div>
+			<ul class="menu animate">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="downloads.html">Downloads</a></li>
+				<li><a href="attrezzature.html">Attrezzature</a></li>
+				<li><a href="comeArrivare.html">Come arrivare</a></li>
+				<li><a href="contatti.html">Contatti</a></li>
+			</ul>
+			<div class="hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+
+		<!--HERO-->
+		<div class="hero">
+			<div class="hero__content reveal">
+				<h1 class="big-text">RS Conselice</h1>
+				<h1 class="normal-text">di BASSANI FEDERICO e CRISTINA S.N.C.</h1>
+			</div>
+		</div>
+
+		<div class="poster mt-3">
+			<div class="poster__img reveal">
+				<img src="images/RSEdificio.jpeg" alt="">
+			</div>
+			<div class="poster__content reveal">
+				<h3 class="big-text">L'AZIENDA</h3>
+				<p>PROGETTAZIONE COSTRUZIONE MACCHINE E CARPENTERIA</p>
+			</div>
+		</div>
+
+<!--
+		<div class="bg-cover mt-2">
+			<div class="bg-cover__title reveal">
+				<h3 class="med-text tw">RS è una società di costruzioni meccaniche orientata a fornire un servizio globale. A fronte di una esigenza del cliente, queste sono le nostre risposte.</h3>
+			</div>
+			<div class="bg-cover__text reveal">
+				<h4 class="normal-text tw">IDEA</h4>
+				<h4 class="normal-text tw">PROGETTO</h4>
+				<h4 class="normal-text tw">ESECUZIONE</h4>
+				<h4 class="normal-text tw">MONTAGGIO</h4>
+				<h4 class="normal-text tw">DOCUMENTAZIONE</h4>
+			</div>
+		</div>
+	-->
+
+	<div class="poster__reverse mt-2">
+		<div class="poster__reverse__content reveal">
+			<h3 class="normal-text">IDEA</h3>
+			<h3 class="normal-text">PROGETTO</h3>
+			<h3 class="normal-text">ESECUZIONE</h3>
+			<h3 class="normal-text">MONTAGGIO</h3>
+			<h3 class="normal-text">DOCUMENTAZIONE</h3>
+			<a href="produzione.html" class="button">Produzione</a>
+		</div>
+		<div class="poster__reverse__img reveal">
+			<img src="images/saldatura1.jpeg" alt="">
+		</div>
+	</div>
+
+		<footer class="footer">
+			<pc class="tw">Copyright - 2022 Grandi Andrea</p>
+		</footer>
+
+
+		<!-- Jquery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+		<script>
+			$( document ).ready(function() {
+				/* Open Panel */
+				$( ".hamburger" ).on('click', function() {
+				  $(".menu").toggleClass("menu--open");
+				});
+			});
+
+			ScrollReveal().reveal('.reveal', { distance: '80px', duration: 800, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 300});
+
+		</script>
+
+	</body>
+</html>
